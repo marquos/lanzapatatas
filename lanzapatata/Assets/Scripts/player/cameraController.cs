@@ -9,7 +9,7 @@ public class cameraController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		transformParent = this.transform.parent.gameObject.transform;
+		transformParent = this.transform.parent.gameObject.transform.parent.gameObject.transform;
 		Cursor.lockState = CursorLockMode.Locked;
 	}
 	
