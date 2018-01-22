@@ -9,6 +9,8 @@ public class playerController : MonoBehaviour {
 	private int isJumping;
 	private int numMaxSaltos;
 	private int counter;
+	private Vector3 movement;
+
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +18,7 @@ public class playerController : MonoBehaviour {
 		this.rb = GetComponent<Rigidbody> ();
 		isJumping = 0;
 		numMaxSaltos = 1;
+
 	}
 	
 	// Update is called once per frame
@@ -26,7 +29,7 @@ public class playerController : MonoBehaviour {
 		transform.Translate (v);
 
 		if (Input.GetKeyDown ("space") && numMaxSaltos > 0) {
-			Vector3 jumpForce = new Vector3 (0.0f, 10.0f, 0.0f);
+			Vector3 jumpForce = new Vector3 (0.0f, 13.0f, 0.0f);
 			rb.AddForce (jumpForce, ForceMode.Impulse);
 			numMaxSaltos--;
 		}
@@ -40,4 +43,12 @@ public class playerController : MonoBehaviour {
 	
 	
 	}
+
+	public void Jump () {
+		Vector3 jumpForce = new Vector3 (0.0f, 13.0f, 0.0f);
+		rb.AddForce (jumpForce, ForceMode.Impulse);
+		numMaxSaltos--;
+	}
+
+
 }
