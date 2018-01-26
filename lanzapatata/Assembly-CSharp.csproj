@@ -52,8 +52,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\animator_controller.cs" />
-     <Compile Include="Assets\Scripts\ButtonScripts\AnimButtonScript.cs" />
-     <Compile Include="Assets\Scripts\ButtonScripts\UpScript.cs" />
+     <Compile Include="Assets\Scripts\ButtonScripts\AnimationButtonScripts.cs" />
+     <Compile Include="Assets\Scripts\ButtonScripts\PlayerButtonScripts.cs" />
+     <Compile Include="Assets\Scripts\ButtonScripts\TextScripts.cs" />
      <Compile Include="Assets\Scripts\player\cameraController.cs" />
      <Compile Include="Assets\Scripts\player\playerController.cs" />
      <Compile Include="Assets\Scripts\player_controller2.cs" />
