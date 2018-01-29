@@ -12,7 +12,7 @@ public class cameraController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		transformParent = this.transform.parent.gameObject.transform.parent.gameObject.transform;
+		transformParent = this.transform.parent.gameObject.transform;
 		Cursor.lockState = CursorLockMode.Locked;
 		this.lifeText.text = "100";
 	}
@@ -30,22 +30,9 @@ public class cameraController : MonoBehaviour {
 		parentRotation.y += verticalRotation;
 		this.transformParent.rotation = Quaternion.Euler (parentRotation);
 	
-		CheckFire();
+
 
 	}
 
-	void CheckFire () {
-		if (Input.GetMouseButtonDown (0)) {
-			Debug.Log ("shoot");
 
-			GameObject shoot = Instantiate (bullet) as GameObject;
-			shoot.SetActive (true);
-			shoot.transform.position = transform.position + transform.forward * 2;
-			shoot.transform.LookAt (transform.position + transform.forward * 3);
-			shoot.GetComponent<Rigidbody> ().velocity = transform.forward * 35;
-
-			Destroy (shoot, 2);
-
-		}
-	}
 }
