@@ -51,6 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Footstep Sounds\Example\Scene Scripts\BP_GUIButtons.cs" />
+     <Compile Include="Assets\Footstep Sounds\Scripts\BP_FootstepSounds.cs" />
+     <Compile Include="Assets\Footstep Sounds\Standard Assets\Character Controllers\Sources\Scripts\BP_MouseLook.cs" />
      <Compile Include="Assets\Scripts\animator_controller.cs" />
      <Compile Include="Assets\Scripts\ButtonScripts\AnimationButtonScripts.cs" />
      <Compile Include="Assets\Scripts\ButtonScripts\PlayerButtonScripts.cs" />

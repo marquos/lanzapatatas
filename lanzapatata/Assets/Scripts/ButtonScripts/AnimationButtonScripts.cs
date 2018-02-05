@@ -6,14 +6,18 @@ public class AnimationButtonScripts : MonoBehaviour {
 
 	private Animator anim;
 	private Rigidbody rb;
+
+
 	// Use this for initialization
-	void Start () {
+	void Awake () {
+		
 		anim = GetComponent<Animator> ();
 		rb = GetComponent<Rigidbody> ();
 	}
 
 	// Update is called once per frame
 	void Update () {
+		
 		/*
 		if (verticalMovement != 0.0f) {
 			anim.SetBool ("esta_andando", true);
@@ -58,4 +62,8 @@ public class AnimationButtonScripts : MonoBehaviour {
 	void OnCollisionEnter(){
 		anim.SetBool ("is_jumping", false);
 	}
+
+
+
+
 }

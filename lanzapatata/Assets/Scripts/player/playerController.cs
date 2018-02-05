@@ -11,14 +11,18 @@ public class playerController : MonoBehaviour {
 	private int counter;
 	private Vector3 movement;
 
+	private AudioSource audio;
+	public AudioClip fastWalk;
+	public AudioClip normalWalk;
+	public AudioClip slowWalk;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		this.counter = 0;
 		this.rb = GetComponent<Rigidbody> ();
 		isJumping = 0;
 		numMaxSaltos = 1;
-
+		audio = GameObject.Find ("Movement").GetComponent <AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -34,16 +38,22 @@ public class playerController : MonoBehaviour {
 			rb.AddForce (jumpForce, ForceMode.Impulse);
 			numMaxSaltos--;
 		}
+
+		audio.clip = this.ClipToSound (); 
+		if (!audio.isPlaying && (verticalMovement!= 0.0f || horizontalMovement!= 0.0f)) {
+			audio.Play ();
+		}
 	}
 
 	void OnCollisionEnter (Collision c){
 		this.numMaxSaltos = 1;
 	}
 
-	void LateUpdate () {
-	
-	
+	private AudioClip ClipToSound(){
+		AudioClip localAudio = this.normalWalk;
+		if (Input.GetKey (KeyCode.LeftShift)) {
+			localAudio = fastWalk;
+		}
+		return localAudio;
 	}
-
-
 }
