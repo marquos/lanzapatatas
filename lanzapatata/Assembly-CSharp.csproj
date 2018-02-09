@@ -51,13 +51,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Footstep Sounds\Example\Scene Scripts\BP_GUIButtons.cs" />
-     <Compile Include="Assets\Footstep Sounds\Scripts\BP_FootstepSounds.cs" />
-     <Compile Include="Assets\Footstep Sounds\Standard Assets\Character Controllers\Sources\Scripts\BP_MouseLook.cs" />
      <Compile Include="Assets\Scripts\animator_controller.cs" />
      <Compile Include="Assets\Scripts\ButtonScripts\AnimationButtonScripts.cs" />
      <Compile Include="Assets\Scripts\ButtonScripts\PlayerButtonScripts.cs" />
      <Compile Include="Assets\Scripts\ButtonScripts\TextScripts.cs" />
+     <Compile Include="Assets\Scripts\CubeEnemyScript.cs" />
      <Compile Include="Assets\Scripts\player\cameraController.cs" />
      <Compile Include="Assets\Scripts\player\playerController.cs" />
      <Compile Include="Assets\Scripts\player\ShootScript.cs" />

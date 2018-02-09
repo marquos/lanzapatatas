@@ -14,7 +14,6 @@ public class cameraController : MonoBehaviour {
 	void Start () {
 		transformParent = this.transform.parent.gameObject.transform;
 		Cursor.lockState = CursorLockMode.Locked;
-		this.lifeText.text = "100";
 	}
 	
 	// Update is called once per frame

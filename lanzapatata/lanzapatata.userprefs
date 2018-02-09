@@ -1,13 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\player\playerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CubeEnemyScript.cs">
     <Files>
       <File FileName="Assets\Scripts\animator_controller.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\player\playerController.cs" Line="44" Column="18" />
-      <File FileName="Assets\Scripts\player\cameraController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\player\playerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\player\cameraController.cs" Line="16" Column="44" />
       <File FileName="Assets\Scripts\player\ShootScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ButtonScripts\AnimationButtonScripts.cs" Line="13" Column="3" />
+      <File FileName="Assets\Scripts\ButtonScripts\AnimationButtonScripts.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ButtonScripts\PlayerButtonScripts.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CubeEnemyScript.cs" Line="29" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
