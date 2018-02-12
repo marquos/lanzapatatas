@@ -8,34 +8,59 @@ public class CubeEnemyScript : MonoBehaviour {
 	Transform location;
 	NavMeshAgent iaAgent;
 
-	Vector3 iniPosition;
-	Vector3 nextPosition;
-	Vector3 actualWayPoint;
+	[SerializeField]
+	Transform [] positions;
+
+	Transform actualWayPoint;
+	int index;
 
 	// Use this for initialization
 	void Awake () {
-		iniPosition = this.transform.position;
-		nextPosition = this.iniPosition + new Vector3 (10.0f, 0.0f, 5.0f);
-		actualWayPoint = nextPosition;
+		index = 0;
+		actualWayPoint = positions [index];
 
-		iaAgent = GetComponent<NavMeshAgent>();
-		iaAgent.SetDestination (nextPosition);
+		iaAgent = GetComponent <NavMeshAgent> ();
+		iaAgent.SetDestination (actualWayPoint.position);
 	}
 
 	void Update () {
-		Vector3 v = actualWayPoint - this.transform.position;
-		Debug.Log (Vector3.Distance (actualWayPoint, this.transform.position));
-		if(Vector3.Distance(actualWayPoint, this.transform.position) < 1.5f){
+		Debug.Log (Vector3.Distance (actualWayPoint.position, this.transform.position));
+		if(Vector3.Distance(actualWayPoint.position, this.transform.position) < 1.0f){
 			UpdateActualWayPoint ();
 		}
 	}
 
 	void UpdateActualWayPoint(){
-		if (actualWayPoint == iniPosition) {
-			actualWayPoint = nextPosition;
-		} else {
-			actualWayPoint = iniPosition;
+		index++;
+		if (index >= 4) {
+			index = 0;
 		}
-		iaAgent.SetDestination (actualWayPoint);
+		actualWayPoint = positions [index];
+		iaAgent.SetDestination (actualWayPoint.position);
+	}
+
+	void Shooted (){
+		
+		
+	}
+
+	private bool CheckIfPlayerIsNear(){
+		bool playerIsNear = false;
+		Collider[] listOfColliders = Physics.OverlapSphere (this.transform.position, 3.0f);
+		int index = 0;
+
+		while (index < listOfColliders.Length) {
+			if (listOfColliders [index].name == "Animation") {
+				Debug.Log (listOfColliders [index].name);
+				playerIsNear = true;
+			
+			} else {
+				Debug.Log (listOfColliders [index].name + "no es el jugador");
+			
+			}
+
+			index++;
+		}
+		return playerIsNear;
 	}
 }
