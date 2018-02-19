@@ -16,6 +16,8 @@ public class playerController : MonoBehaviour {
 	public AudioClip normalWalk;
 	public AudioClip slowWalk;
 
+	private Animator anim;
+
 	// Use this for initialization
 	void Awake () {
 		this.counter = 0;
@@ -46,6 +48,7 @@ public class playerController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision c){
+		anim.SetBool ("jumping", false);
 		this.numMaxSaltos = 1;
 	}
 

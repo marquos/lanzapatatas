@@ -32,22 +32,22 @@ public class AnimationButtonScripts : MonoBehaviour {
 
 
 	public void moveForward(){
-		anim.SetBool ("is_moving", true);
+		anim.SetBool ("moving", true);
 		anim.SetFloat ("speed", 1.0f);
 	}
 
 	public void moveBack(){
-		anim.SetBool ("is_moving", true);
+		anim.SetBool ("moving", true);
 		anim.SetFloat ("speed", -1.0f);
 	}
 
 	public void moveLeft(){
-		anim.SetBool ("is_moving", true);
+		anim.SetBool ("moving", true);
 		anim.SetFloat ("speed", 1.0f);
 	}
 
 	public void moveRight(){
-		anim.SetBool ("is_moving", true);
+		anim.SetBool ("moving", true);
 		anim.SetFloat ("speed", 1.0f);
 	}
 
@@ -56,11 +56,11 @@ public class AnimationButtonScripts : MonoBehaviour {
 	}
 	public void Jump(){
 		rb.AddForce (new Vector3(0.0f, 10.0f, 0.0f), ForceMode.Impulse);
-		anim.SetBool ("is_jumping", true);
+		anim.SetBool ("jumping", true);
 	}
 
 	void OnCollisionEnter(){
-		anim.SetBool ("is_jumping", false);
+		anim.SetBool ("jumping", false);
 	}
 
 

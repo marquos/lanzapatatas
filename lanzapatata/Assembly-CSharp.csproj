@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\ButtonScripts\PlayerButtonScripts.cs" />
      <Compile Include="Assets\Scripts\ButtonScripts\TextScripts.cs" />
      <Compile Include="Assets\Scripts\CubeEnemyScript.cs" />
+     <Compile Include="Assets\Scripts\MeshAgentClickScript.cs" />
      <Compile Include="Assets\Scripts\player\cameraController.cs" />
      <Compile Include="Assets\Scripts\player\playerController.cs" />
      <Compile Include="Assets\Scripts\player\ShootScript.cs" />

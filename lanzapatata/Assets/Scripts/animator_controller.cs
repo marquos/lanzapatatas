@@ -17,15 +17,19 @@ public class animator_controller : MonoBehaviour {
 
 		float verticalMovement = Input.GetAxisRaw ("Vertical");
 		if (verticalMovement != 0.0f) {
-			anim.SetBool ("is_moving", true);
+			anim.SetBool ("moving", true);
 		} else {
-			anim.SetBool ("is_moving", false);
+			anim.SetBool ("moving", false);
 		}
 
 		if (Input.GetKey ("space")) {
-			anim.SetBool ("is_jumping", true);
+			anim.SetBool ("jumping", true);
 		} else {
-			anim.SetBool ("is_jumping", false);
+			anim.SetBool ("jumping", false);
+		}
+
+		if (Input.GetMouseButtonDown (0)) {
+			anim.SetBool ("shooting", true);
 		}
 	}
 }
