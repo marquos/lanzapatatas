@@ -28,8 +28,17 @@ public class animator_controller : MonoBehaviour {
 			anim.SetBool ("jumping", false);
 		}
 
+
 		if (Input.GetMouseButtonDown (0)) {
 			anim.SetBool ("shooting", true);
+		} else {
+			anim.SetBool ("shooting", false);
 		}
+	}
+
+	void OnCollisionEnter (Collision c){
+		Debug.Log ("HOLAAAAAAAAAAAAAAA");
+		anim.SetBool ("jumping", false);
+
 	}
 }

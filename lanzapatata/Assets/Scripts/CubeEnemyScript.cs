@@ -24,7 +24,7 @@ public class CubeEnemyScript : MonoBehaviour {
 	}
 
 	void Update () {
-		Debug.Log (Vector3.Distance (actualWayPoint.position, this.transform.position));
+		//Debug.Log (Vector3.Distance (actualWayPoint.position, this.transform.position));
 		if(Vector3.Distance(actualWayPoint.position, this.transform.position) < 1.0f){
 			UpdateActualWayPoint ();
 		}

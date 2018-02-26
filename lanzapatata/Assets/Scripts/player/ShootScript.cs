@@ -5,19 +5,22 @@ using UnityEngine;
 public class ShootScript : MonoBehaviour {
 
 	public GameObject bullet;
-
+	private Animator anim;
 	// Use this for initialization
 	void Start () {
-		
+		anim = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		CheckFire ();
+
 	}
 
 	void CheckFire () {
 		if (Input.GetMouseButtonDown (0)) {
+			//anim.SetBool ("shooting", true);
+
 			Debug.Log ("shoot");
 
 			GameObject shoot = Instantiate (bullet) as GameObject;
@@ -28,6 +31,7 @@ public class ShootScript : MonoBehaviour {
 
 			Destroy (shoot, 2);
 
-		}
+
+		} 
 	}
 }

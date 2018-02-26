@@ -48,8 +48,8 @@ public class playerController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision c){
-		anim.SetBool ("jumping", false);
-		this.numMaxSaltos = 1;
+		//anim.SetBool ("jumping", false);
+		this.numMaxSaltos++;
 	}
 
 	private AudioClip ClipToSound(){
