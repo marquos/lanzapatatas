@@ -18,19 +18,32 @@ public class shooterController : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
 		transform.LookAt (player.transform.position);
+
 	}
 
 	private IEnumerator Fire(){
 
 		while (true) {
-			
+
+
+			GameObject shoot = Instantiate (shootable) as GameObject;
+			shoot.SetActive (true);
+			shoot.transform.position = transform.position + transform.forward * 2;
+			shoot.transform.LookAt (transform.position + transform.forward * 3);
+			shoot.GetComponent<Rigidbody> ().velocity = transform.forward * 5;
+
+			Destroy (shoot, 2);
+
+			/*
 			GameObject shoot = (GameObject)Instantiate (shootable, shootable.transform.forward* 1.5f, t.rotation);
 			shoot.SetActive (true);
+			//Debug.Log (shootable.transform.forward);
+			Debug.Log (this.transform.forward);
 			shoot.transform.LookAt (player.transform.position);
 			Vector3 diffForce = player.transform.position - shoot.transform.position;
 			shoot.GetComponent <Rigidbody> ().velocity = diffForce * 1;
 
-			Destroy (shoot, 1);
+			Destroy (shoot, 1);*/
 			yield return new WaitForSeconds (2.0f);
 		}
 	}
