@@ -1,14 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\animator_controller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\shooterController.cs">
     <Files>
-      <File FileName="Assets\Scripts\animator_controller.cs" Line="28" Column="34" />
+      <File FileName="Assets\Scripts\animator_controller.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\player\cameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\player\ShootScript.cs" Line="17" Column="3" />
-      <File FileName="Assets\Scripts\ButtonScripts\AnimationButtonScripts.cs" Line="7" Column="24" />
+      <File FileName="Assets\Scripts\player\ShootScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ButtonScripts\AnimationButtonScripts.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ButtonScripts\PlayerButtonScripts.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CubeEnemyScript.cs" Line="27" Column="5" />
-      <File FileName="Assets\Scripts\player\playerController.cs" Line="50" Column="1" />
+      <File FileName="Assets\Scripts\CubeEnemyScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\player\playerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\explosion.cs" Line="24" Column="65" />
+      <File FileName="Assets\Scripts\explosion_1.cs" Line="23" Column="5" />
+      <File FileName="Assets\Scripts\shooterController.cs" Line="27" Column="92" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

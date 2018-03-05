@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 135276983015685142}
   - component: {fileID: 23569053067806034}
   - component: {fileID: 54366051378043452}
+  - component: {fileID: 114753621268349696}
   m_Layer: 0
   m_Name: patata
   m_TagString: Untagged
@@ -97,6 +98,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114753621268349696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1082209111694212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dfc2ab7f08496441b9bafeaa8877795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135276983015685142
 SphereCollider:
   m_ObjectHideFlags: 1

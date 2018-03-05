@@ -55,11 +55,15 @@
      <Compile Include="Assets\Scripts\ButtonScripts\AnimationButtonScripts.cs" />
      <Compile Include="Assets\Scripts\ButtonScripts\PlayerButtonScripts.cs" />
      <Compile Include="Assets\Scripts\ButtonScripts\TextScripts.cs" />
+     <Compile Include="Assets\Scripts\cacScript.cs" />
      <Compile Include="Assets\Scripts\CubeEnemyScript.cs" />
+     <Compile Include="Assets\Scripts\explosion.cs" />
+     <Compile Include="Assets\Scripts\explosion_1.cs" />
      <Compile Include="Assets\Scripts\player\cameraController.cs" />
      <Compile Include="Assets\Scripts\player\playerController.cs" />
      <Compile Include="Assets\Scripts\player\ShootScript.cs" />
      <Compile Include="Assets\Scripts\player_controller2.cs" />
+     <Compile Include="Assets\Scripts\shooterController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
