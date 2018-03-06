@@ -17,6 +17,6 @@ public class enemyMove : MonoBehaviour {
 	void LateUpdate () {
 		Vector3 offset = rbAjeno.transform.position - transform.position;
 		Vector3 impulse = /*new Vector3 (20.0f, 0.0f, 20.0f)*/ offset;
-		rb.AddForce (offset/2.5f, ForceMode.Impulse);
+		rb.AddForce (offset/10, ForceMode.Impulse);
 	}
 }

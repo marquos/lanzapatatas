@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\explosion.cs" />
      <Compile Include="Assets\Scripts\explosion_1.cs" />
      <Compile Include="Assets\Scripts\lookAt.cs" />
+     <Compile Include="Assets\Scripts\menuScript.cs" />
      <Compile Include="Assets\Scripts\player\cameraController.cs" />
      <Compile Include="Assets\Scripts\player\playerController.cs" />
      <Compile Include="Assets\Scripts\player\ShootScript.cs" />
