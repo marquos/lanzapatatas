@@ -30,7 +30,7 @@ public class shooterController : MonoBehaviour {
 			shoot.SetActive (true);
 			shoot.transform.position = transform.position + transform.forward * 2;
 			shoot.transform.LookAt (transform.position + transform.forward * 3);
-			shoot.GetComponent<Rigidbody> ().velocity = transform.forward * 5;
+			shoot.GetComponent<Rigidbody> ().velocity = transform.forward * 20;
 
 			Destroy (shoot, 2);
 
