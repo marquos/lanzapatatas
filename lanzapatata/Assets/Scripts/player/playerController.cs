@@ -36,7 +36,7 @@ public class playerController : MonoBehaviour {
 
 	
 		if (Input.GetKeyDown ("space") && numMaxSaltos > 0) {
-			Vector3 jumpForce = new Vector3 (0.0f, 10.0f, 0.0f);
+			Vector3 jumpForce = new Vector3 (0.0f, 4.0f, 0.0f);
 			rb.AddForce (jumpForce, ForceMode.Impulse);
 			numMaxSaltos--;
 		}
